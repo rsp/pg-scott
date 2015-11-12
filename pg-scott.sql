@@ -49,18 +49,18 @@ create table bonus(
 
 /* DML: */
 
-insert into dept (deptno, dname, loc)
-       values (10, 'ACCOUNTING', 'NEW YORK'),
-         (20, 'RESEARCH', 'DALLAS'),
-         (30, 'SALES', 'CHICAGO'),
-         (40, 'OPERATIONS', 'BOSTON');
+insert into dept (deptno,  dname,        loc)
+       values    (10,     'ACCOUNTING', 'NEW YORK'),
+                 (20,     'RESEARCH',   'DALLAS'),
+                 (30,     'SALES',      'CHICAGO'),
+                 (40,     'OPERATIONS', 'BOSTON');
 
 insert into salgrade (grade, losal, hisal)
-  values (1, 700, 1200),
-         (2, 1201, 1400),
-         (3, 1401, 2000),
-         (4, 2001, 3000),
-         (5, 3001, 9999);
+       values        (1,      700,  1200),
+                     (2,     1201,  1400),
+                     (3,     1401,  2000),
+                     (4,     2001,  3000),
+                     (5,     3001,  9999);
 
 insert into emp (empno, ename,    job,        mgr,   hiredate,     sal, comm, deptno)
        values   (7369, 'SMITH',  'CLERK',     7902, '1980-12-17',  800, NULL, NULL), /* deptno changed */
