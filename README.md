@@ -1,7 +1,7 @@
 pg-scott
 ========
 
-This is the classical Oracle Scott database (EMP, DEPT, BONUS, SALGRADE) in PostgreSQL.
+This is the classical [Scott database](http://www.orafaq.com/wiki/SCOTT) (EMP, DEPT, BONUS, SALGRADE) for use in PostgreSQL.
 
 Work in progress...
 
