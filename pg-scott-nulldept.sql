@@ -1,5 +1,6 @@
 
 -- Classical Scott database (EMP, DEPT, SALGRADE) for PostgreSQL
+-- Version with Smith's deptno changed from 20 to NULL
 -- See: https://github.com/rsp/pg-scott
 
 
@@ -61,7 +62,7 @@ insert into salgrade (grade, losal, hisal)
                      (5,     3001,  9999);
 
 insert into emp (empno, ename,    job,        mgr,   hiredate,     sal, comm, deptno)
-       values   (7369, 'SMITH',  'CLERK',     7902, '1980-12-17',  800, NULL,   20),
+       values   (7369, 'SMITH',  'CLERK',     7902, '1980-12-17',  800, NULL, NULL), -- deptno changed
                 (7499, 'ALLEN',  'SALESMAN',  7698, '1981-02-20', 1600,  300,   30),
                 (7521, 'WARD',   'SALESMAN',  7698, '1981-02-22', 1250,  500,   30),
                 (7566, 'JONES',  'MANAGER',   7839, '1981-04-02', 2975, NULL,   20),
