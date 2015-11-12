@@ -3,7 +3,7 @@ pg-scott
 
 This is the classical [Scott database](http://www.orafaq.com/wiki/SCOTT) (EMP, DEPT, BONUS, SALGRADE) for use in PostgreSQL.
 
-Work in progress...
+See [docker-pg-scott](https://github.com/rsp/docker-pg-scott) and [docker-pg-scott-nulldept](https://github.com/rsp/docker-pg-scott-nulldept) for Docker images that include a PostgreSQL server with data from [pg-scott.sql](#pg-scottsql) and [pg-scott-nulldept.sql](#pg-scott-nulldeptsql) respectively, that automatically start the `psql` shell to play with the data interactively. (Not yet - Work in progress...)
 
 Data
 ----
@@ -13,8 +13,6 @@ The data is based on the data in [The EMP and DEPT tables in Oracle](https://ape
 **with some differences**.
 
 ### pg-scott.sql
-
-pg-scott.sql
 
 [pg-scott.sql](https://github.com/rsp/pg-scott/blob/master/pg-scott.sql)
 ([download](https://raw.githubusercontent.com/rsp/pg-scott/master/pg-scott.sql))
