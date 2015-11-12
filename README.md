@@ -3,7 +3,7 @@ pg-scott
 
 This is the classical [Scott database](http://www.orafaq.com/wiki/SCOTT) (EMP, DEPT, BONUS, SALGRADE) for use in PostgreSQL.
 
-See [docker-pg-scott](https://github.com/rsp/docker-pg-scott) and [docker-pg-scott-nulldept](https://github.com/rsp/docker-pg-scott-nulldept) for Docker images that include a PostgreSQL server with data from [pg-scott.sql](#pg-scottsql) and [pg-scott-nulldept.sql](#pg-scott-nulldeptsql) respectively, that automatically start the `psql` shell to play with the data interactively. (Not yet - Work in progress...)
+See [docker-pg-scott](https://github.com/rsp/docker-pg-scott) and [docker-pg-scott-nd](https://github.com/rsp/docker-pg-scott-nd) for Docker images that include a PostgreSQL server with data from [pg-scott.sql](#pg-scottsql) and [pg-scott-nd.sql](#pg-scott-ndsql) respectively, that automatically start the `psql` shell to play with the data interactively. (Not yet - Work in progress...)
 
 Data
 ----
@@ -22,14 +22,16 @@ Two dates were changed to be consistent with other sources, like [Oracle Példat
 1. Scott's `hiredate` changed to `1982-12-09`
 2. Adams' `hiredate` changed to `1983-01-12`
 
-### pg-scott-nulldept.sql
+### pg-scott-nd.sql
 
-[pg-scott-nulldept.sql](https://github.com/rsp/pg-scott/blob/master/pg-scott-nulldept.sql)
-([download](https://raw.githubusercontent.com/rsp/pg-scott/master/pg-scott-nulldept.sql))
+[pg-scott-nd.sql](https://github.com/rsp/pg-scott/blob/master/pg-scott-nd.sql)
+([download](https://raw.githubusercontent.com/rsp/pg-scott/master/pg-scott-nd.sql))
 
 In addition to changes in pg-scott.sql, there was one change:
 
 1. Smith's `deptno` changed from `20` to `NULL`
+
+To play with examples where one employer has no department.
 
 Conversion
 ----------
