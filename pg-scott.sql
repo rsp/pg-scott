@@ -1,12 +1,9 @@
-/*
 
-Classical Scott database (EMP, DEPT, SALGRADE) for PostgreSQL
+-- Classical Scott database (EMP, DEPT, SALGRADE) for PostgreSQL
+-- See: https://github.com/rsp/pg-scott
 
-See: https://github.com/rsp/pg-scott
 
-*/
-
-/* DDL: */
+-- DDL - Data Definition Language:
 
 begin;
 
@@ -39,7 +36,7 @@ create table salgrade (
 );
 
 /*
-create table bonus(
+create table bonus (
   ename text,
   job   text,
   sal   integer,
@@ -47,7 +44,8 @@ create table bonus(
 );
 */
 
-/* DML: */
+
+-- DML - Data Manipulation Language:
 
 insert into dept (deptno,  dname,        loc)
        values    (10,     'ACCOUNTING', 'NEW YORK'),
